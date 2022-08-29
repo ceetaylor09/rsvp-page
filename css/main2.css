@@ -1,0 +1,675 @@
+
+@-ms-viewport { 
+    width: device-width;
+    overflow-y: auto;
+}
+
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+	background: url("../images/nyc_skyline_vector2.jpg") no-repeat top center fixed; 
+    background-size: cover;
+	position: relative;
+}
+
+#rsvp-form {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/nyc_skyline_vector2.jpg") no-repeat top center fixed; 
+    background-size: cover;
+	position: relative;
+    display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+    justify-content: center;
+    margin: 15% 0;
+}
+
+
+#hand-key-image img {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 40%;
+    z-index: 1;
+}
+
+#register {
+    position: absolute;
+    margin: 2.5% 30% 0 8.5%;
+    height: auto;
+    z-index: 2;
+}
+
+
+
+#event {
+	width: 45%;
+	margin-right: 20px;
+	order: 1;
+}
+
+#event-photo img {
+	width: 100%;
+	margin-bottom: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#event h3 {
+	align-items: bottom;
+	font-family: "Martel Sans", verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#event h2 {
+	align-items: center;
+	font-family: "Martel Sans", verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.175;
+}
+
+
+.event-text, .event-copy, .event-heading, .event-confirm {
+    font-family: "Martel Sans", helvetica, sans-serif;
+}
+
+
+.event-text h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 1px #001036;
+}
+
+
+#sales-copy {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.5;
+    margin-top: 0;
+    width: 80%;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 1px #001036;
+    
+}
+
+
+
+#sales-confirm {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+    margin: 0;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.275;
+    
+}
+
+#description_confirm {
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70));
+    padding: 20px 35px;
+    border-radius: 14px;
+}
+
+#description_box {
+    width: 50%;
+    background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70));
+    padding: 35px;
+    border-radius: 14px;  
+}
+
+.event-copy {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.event-copy a {
+    color: #cc3150;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.event-heading {
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.last {
+  margin-bottom: 0;  
+}
+
+.highlight {
+    color: #cc3150;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.details {
+    padding-left: 45px;
+}
+    
+#invitation {
+    width: 58%;
+}
+
+#invitation a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+#invitation p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    background-color: #cc3150;
+    border-radius: 12px;
+    margin-top: 35px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+#invitation p:hover {
+    background-color: #96093d;    
+}
+
+
+
+/* Styles for Custom Opt-In Form Page */
+
+#close-button {
+	position: absolute;
+	top: -60px;
+	left: 11%;
+}
+
+#close-button img {
+	width: 45px;
+	height: 45px;
+	border: 0px;
+}
+
+
+/* Changes the style of the overall form */
+#mailchimp {
+    background: #f8f8f8;
+    width: 70%;
+    height: 60%;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+    border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+form {
+	flex: 1;
+	order: 2;
+	width: 55%;
+}
+
+
+/* Styles the header text above the inputs */
+#mailchimp h2 {
+    font-size: 21px;
+	font-family: "Martel Sans", verdana, sans-serif;
+    margin: 0 0 20px;
+    color: #000000;
+    text-align: center;
+}
+
+#mailchimp .form-heading {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#mailchimp label {
+	display: none;
+}
+
+
+/* Styles the input boxes */
+#mailchimp input {
+    border: medium none;
+    color: #a8a7a7;
+    font-family: "Martel Sans", verdana, sans-serif;
+    font-size: 18px;
+    margin: 25px 0;
+    width: 85%;
+    border: solid 1px darkgray;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+#mailchimp input[placeholder="E-mail"],
+#mailchimp input[placeholder="First Name"],
+#mailchimp input[placeholder="Last Name"] {
+    padding: 8px 10px;
+    margin-left: -12px;
+}
+
+#mailchimp input:focus {
+	color: black;
+}
+
+/* Styles the subscribe button */
+#mailchimp input.email { background: #fff }
+#mailchimp input.name { background: #fff}
+#mailchimp input[type="submit"] {
+	background: #cc3150;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+	width: 60%;
+	padding: 8px 0;
+}
+
+#mailchimp input[type="submit"]:hover { background: #96093d; }
+
+#mailchimp input.error {
+	background-color: #Facfd4;
+}
+
+label {
+	color: #f00;
+	font-size: 15px;
+	font-family: "Martel Sans", helvetica, sans-serif;
+	width: 280px;
+	padding: 0 6px;
+	margin: 0 0px -17px 25px;
+	display: none;
+	text-align: bottom;
+	text-align: left;
+}
+
+
+/* Styles for Thank You Confirmation Page */
+
+#register_confirm {
+    margin: 5% 9%;
+    width: 50%;
+}
+
+#main-container {
+    width: 70%;
+    margin-top: 10%;
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+    
+    #register {
+        margin: 7% 3.5%;
+        height: auto;
+    }
+    
+    #hand-key-image img {
+        width: 50%;
+    }
+    
+    #main-invite-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #event-headline h1 {
+        line-height: 1.5;
+        padding-bottom: 15px;
+    }
+    
+    #sales-copy {
+        width: 56%;
+        padding-bottom: 25px;
+    }
+    
+    #description_box {
+        width: 50%;
+        margin: 0;
+    }
+    
+    #sidebar-container {
+        padding: 25px 0;
+    }
+
+    #invitation {
+        width: 58%;
+    }
+    
+    #invitation p {
+        font-size: 21px;
+    }
+    
+  /* Styles for Thank You Confirmation Page */
+
+    #register_confirm {
+        margin: -3% 16%;
+        width: 75%;
+    }
+
+    #main-container {
+        width: 80%;
+        margin-top: 10%;
+    }
+    
+
+  /* Styles for Custom Opt-In Form Page */
+    
+    body, html {
+        height: auto;
+        max-height: auto;
+    }
+    
+    #rsvp-form {
+        margin: 5% 0;
+    }
+    
+	#mailchimp {	
+		display: block;
+        width: 60%;
+        padding-top: 30px;
+	}
+    
+	#mailchimp h2 {
+		font-size: 19px;
+        padding-top: 25px;
+	}
+    
+    #mailchimp .form-heading {
+        padding-top: 5%;
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    
+    #mailchimp input {
+        font-size: 17px;
+        width: 100%;
+    }
+    
+    
+    #close-button {
+        top: -15px;
+        left: 8%;
+    }
+    
+    #close-button img {
+        width: 45px;
+        height: 45px;
+        border: 0px;
+    }
+    
+    
+	#event, form, #confirm {
+		width: 80%;
+		margin: 0 auto;
+	}
+    
+    #event h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+	#event-photo img {
+		height: 85%;
+		margin: 0 auto;
+	}
+    
+    #mailchimp input[type="submit"] {
+		font-size: 16px;
+    }
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    #register_confirm {
+        text-align: center;
+        margin: 3% 14.5%;
+        width: 75%;
+    }
+    
+    #sales-confirm {
+        font-size: 28px;
+    }
+    
+    #mailchimp input[type="submit"] {
+		font-size: 15px;
+		width: 70%;
+	}
+    
+}
+
+
+
+
+@media screen and (max-width: 582px) {
+    
+    #hand-key-image {
+        padding-top: 330px;
+    }
+    
+    #register {
+        margin: 8% 3.5%;
+        height: auto;
+    }
+    
+    #hand-key-image img {
+        position: absolute;
+        top: -20px;
+        right: 0;
+        width: 66%;
+    }
+    
+    #main-invite-container {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        z-index: 2;
+    }
+    
+    #event-headline h1 {
+        font-size: 32px;
+        line-height: 1.5;
+        padding-bottom: 25px;
+    }
+    
+    #sales-copy {
+        font-size: 24px;
+        line-height: 1.5;
+        width: 80%;
+        margin: 0 10%;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 50px;
+    }
+    
+    #description_box {
+        width: 70%;
+        padding: 15px;
+        margin: 0 12.5%;
+    }
+    
+    .highlight {
+        font-size: 20px;
+    }
+    
+    .event-copy {
+        font-size: 18px;
+        line-height: 1.325;
+    }
+    
+    #sidebar-container {
+        padding: 10% 0;
+    }
+
+    #invitation {
+        width: 70%;
+        margin: 0 15%;
+    }
+    
+    #invitation p {
+        font-size: 18px;
+        margin-top: 0px;
+        padding: 5px 10px;
+    }
+    
+    
+    
+
+	#mailchimp input[type="submit"] {
+		font-size: 14px;
+		width: 85%;
+	}
+
+	#event h3 {
+		font-size: 16px;
+	}
+
+	#mailchimp h2 {
+		font-size: 18px;
+	}
+
+	#event-photo img {
+		width: 100%;
+	}
+
+	label { 
+		width: 160px;
+	}
+    
+    #close-button img {
+        width: 40px;
+        height: 40px;
+        border: 0px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    
+    #hand-key-image {
+        padding-top: 250px;
+    }
+    
+    #hand-key-image img {
+        top: -10px;
+        width: 67%;
+    }
+    
+    
+    #event-headline h1 {
+        font-size: 28px;
+        line-height: 1.5;
+        padding-bottom: 25px;
+    }
+    
+    .highlight {
+        font-size: 18px;
+    }
+    
+    .event-copy {
+        font-size: 16px;
+        line-height: 1.325;
+    }
+    
+    #invitation {
+        width: 70%;
+        margin: 0 16%;
+    }
+    
+    #invitation p {
+        font-size: 15px;
+        margin-top: 0px;
+        padding: 5px 10px;
+    }
+    
+    
+    
+    
+    #mailchimp {	
+        width: 75%;
+	}
+    
+	#mailchimp input[type="submit"] {
+		font-size: 14px;
+		width: 85%;
+	}
+    
+    #close-button {
+        top: 10px;
+        left: 10%;
+    }
+
+	#event h3 {
+		font-size: 14px;
+	}
+
+	#mailchimp h2 {
+		font-size: 18px;
+	}
+
+	#event-photo img {
+		width: 100%;
+	}
+    
+    #mailchimp .form-heading {
+        font-size: 16px;
+    }
+
+	label { 
+		width: 160px;
+	}
+    
+    
+    #register_confirm {
+        text-align: center;
+        margin: 15% 12%;
+        width: 75%;
+    }
+    
+    #sales-confirm {
+        font-size: 20px;
+    }
+    
+    #description_confirm .event-copy {
+        font-size: 15px;
+    }
+}
+
